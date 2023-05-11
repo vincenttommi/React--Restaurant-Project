@@ -15,15 +15,15 @@ const Navbar = () => (
   <li className='p_opensans'><a href='#awards'>Awards</a> </li>
   <li className='p_opensans'><a href='#contact'>Contact</a> </li>
 
-
-
-
-  
-
-
-
- 
   </ul>
+
+  {/* login div */}
+
+  <div  className='app_navbar_logins'>
+    <a href='#login ' className='p_opensans'>Login/Register</a>
+
+<a href='#login' className='p_opensans'>Book Table</a>
+  </div>
   </nav>
 );
 

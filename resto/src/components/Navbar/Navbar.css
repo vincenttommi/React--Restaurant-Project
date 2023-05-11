@@ -34,3 +34,33 @@
  cursor: pointer;
 
 }
+
+.app_navbar_links  li:hover{
+color:var(--color-grey);
+}
+.app_navbar_logins{
+
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #ffff;
+
+
+
+}
+
+.app_navbar_logins a{
+  margin: 0 1rem;
+  text-decoration: none;
+  transition:0.5s ease;
+}
+.app_navbar_logins a:hover{
+
+    border-bottom: 1px  solid var(--color-golden);
+}
+
+.app_navbar_logins div{
+width:1px;
+height:30x;
+background-color: var(--color-grey);
+}
