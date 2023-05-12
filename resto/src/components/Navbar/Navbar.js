@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {GiHamburgerMenu} from 'react-icons/gi';
 import {MdOutlineRestaurantMenu} from 'react-icons/md'
 import './Navbar.css';
 import images from '../../constants/images';
-const Navbar = () => (
+const Navbar = () => {
+
+  const [toggleMenu,setToggleMenu]= useState(false);
+
+
+
+
+return(
+
   <nav className='app_navbar'>
   <div className='app_navbar-logo'>
     <img src={images.gericht} alt='app logo'/>
@@ -27,19 +35,17 @@ const Navbar = () => (
 
 <div className='app_navbar-smallscreen'>
 
-  <GiHamburgerMenu color='#fff' fontSize={27}  onClick={()=>{}}></GiHamburgerMenu>
+  <GiHamburgerMenu color='#ffff' fontSize={27}  onClick={()=>setToggleMenu(true)}/>
 
-</div>
+
 
 {/* another div */}
 
-<div className='app_navbar-smallscreen_overlay flex_center slide_bottom'>
- <MdOutlineRestaurantMenu fontSize={27} className='overlay_close' onClick={()=>{}}></MdOutlineRestaurantMenu>
+{toggleMenu  && (
 
-
-
-
-<ul className='app_navbar_smallscreen'>
+<div className='app_navbar_smallscreen_overlay flex_center slide_bottom'>
+ <MdOutlineRestaurantMenu fontSize={27} className='overlay_close' onClick={()=> setToggleMenu(false)}/>
+<ul className='app_navbar_smallscreen-links'>
   <li className='p_opensans'><a href='#home'>Home</a> </li>
   <li className='p_opensans'><a href='#about'>About</a> </li>
   <li className='p_opensans'><a href='#menu'>Menu</a> </li>
@@ -47,16 +53,11 @@ const Navbar = () => (
   <li className='p_opensans'><a href='#contact'>Contact</a> </li>
 
   </ul>
-
-
-
-
-
-
 </div>
-
-
+)}
+</div>
   </nav>
-);
+)
+};
 
 export default Navbar;
