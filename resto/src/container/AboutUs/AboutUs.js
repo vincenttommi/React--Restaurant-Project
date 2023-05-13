@@ -30,7 +30,7 @@ const AboutUs = () => (
 {/* history section  */}
 
 
- <div className='app__about-content_history'>
+ <div className='app__about-content_history '>
         <h1 className='headtext__cormonant'>Our History</h1>
 
         <img src={images.spoon} alt='about_spoon' className='spoon__img'/>
