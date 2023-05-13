@@ -16,7 +16,7 @@ const Header = () => {
         Bellissiamo ,Welcome 
         to the Best Hotel in Dago
         Affordable and Cheap
-      </p>
+      </p> 
       <button type='button' className='custom__buttton'>Explore Menu</button>
       </div>
 
@@ -24,7 +24,7 @@ const Header = () => {
       <div className='app_wrapper_img'>
 
 
-      <img  src={images.welcome} alt='header img'/>
+      <img  src={images.sign} alt='header img'/>
         
 
 
