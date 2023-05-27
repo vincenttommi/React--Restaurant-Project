@@ -7,16 +7,14 @@ const MenuItem = ({ title, price, tags}) => {
     <div className='app__menuitem'>
       <div className='app__menuitem-head'>
         <div className='app__menu-name'>
-        <p className='p__cormant' style={{color:'#DCCA87'}}>{title}</p>
-        </div>
+        <p className='p__cormant' style={{color: ' #DCCA87'}}>{title}</p>
+        </div>    
 
-           
-          
-           
+
            <div className='app__menuitem-dash'/>
 
 
-        <div className='app__menu-price'>
+        <div className='app__menuitem-price'>
         <p className='p__cormant' >{price}</p>
         </div>
       </div>
@@ -28,6 +26,6 @@ const MenuItem = ({ title, price, tags}) => {
     </div>
  
   )
-}
+} 
 
 export default MenuItem;
