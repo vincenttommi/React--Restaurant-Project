@@ -24,7 +24,7 @@ const Header = () => {
       <div className='app_wrapper_img'>
 
 
-      <img  src={images.sign} alt='header img'/>
+      <img  src={images.welcome} alt='header img' style={{width:"10%",}}/>
         
 
 

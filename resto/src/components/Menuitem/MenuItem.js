@@ -1,0 +1,33 @@
+ import React from 'react';
+import './MenuItem.css';
+
+const MenuItem = ({ title, price, tags}) => {
+  return (
+
+    <div className='app__menuitem'>
+      <div className='app__menuitem-head'>
+        <div className='app__menu-name'>
+        <p className='p__cormant' style={{color:'#DCCA87'}}>{title}</p>
+        </div>
+
+           
+          
+           
+           <div className='app__menuitem-dash'/>
+
+
+        <div className='app__menu-price'>
+        <p className='p__cormant' >{price}</p>
+        </div>
+      </div>
+
+
+      <div className='app__menuitem-sub'>
+        <p className='p__opensans' style={{color:'#AAA'}}>{tags}</p>
+      </div>
+    </div>
+ 
+  )
+}
+
+export default MenuItem;
