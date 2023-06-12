@@ -6,7 +6,7 @@ import  './Intro.css';
 const Intro = () => {
   return (
     <div className='app__video'>
-    <video src={meal}  />
+    <video src={meal} ref={}  type='video/mp4' loop controls = {false} muted  />
       
       
 </div>
