@@ -15,8 +15,8 @@ object-fit: cover;
 .app__video-overlay{
 
     position:absolute;
-    inset:0 auto;
-    background: rgba(0,0,0.65z);
+    inset:0;
+    background: rgba(0,0,0,0.30);
 
 
 }

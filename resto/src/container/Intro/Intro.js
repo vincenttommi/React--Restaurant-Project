@@ -59,12 +59,12 @@ const  vidref  = React.useRef();
 
 
          <BsFillPlayFill     color="#fff" fontsize={30} />
-        ) : <BsFillPlayFill    color='#fff' fontSize={30} />}
+        ) : <BsFillPlayFill    color='#fff' fontsize={30} />}
 
 
       </div>
      </div>
-    </div>
+    </div>  
   )
 }
 
