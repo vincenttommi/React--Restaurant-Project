@@ -44,7 +44,7 @@ const Laurels = () => {
      <div className='app__wrapper_img'>
 
 
-      <img src={images.laurels} alt='laurels' />
+      <img src={images.laurels} alt='laurel'/>
 
 
 
