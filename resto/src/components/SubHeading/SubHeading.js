@@ -1,5 +1,6 @@
 import React from 'react';
 import {images} from '../../constants';
+import './SubHeading.css'; 
 
 // destructuring a props so as to be accessed our function
 const SubHeading = ({ title}) => (
