@@ -1,13 +1,21 @@
 import React from 'react'
 import './Gallery.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInstagram
+} from "@fortawesome/free-brands-svg-icons";
 
 import {SubHeading} from  '../../components';
 import { images} from '../../constants';
-import {BsInstragram,BsArrowLeftShort,BsArrowLeftRightShort} from  'react-icons/bs';
+import {BsInstragram,BsArrowLeftShort,BsArrowRightShort} from  'react-icons/bs';
 
+const  galleryImages  = [images.gallery01,images.gallery02,images.gallery03,images.gallery04]
+//a variable holding  images being passed from an array
+
+// string function taking in a string
 const scroll =  (direction) =>{
 
-  const  { current }  = scrollRef;
+  const  { current }  = scroll;
 }
 
 const Gallery = () => {
@@ -28,7 +36,6 @@ const Gallery = () => {
 
     }
   }
-}
 
   return (
     <div className='app__gallery flex__center'>
@@ -42,9 +49,27 @@ const Gallery = () => {
       </div>
       <div className='app__gallery-images'>
         <div className='app__gallery-images_container' ref={scrollRef}>
+
+
+           {/* map function that  extracts images from  the array  */}
+          {galleryImages.map((image,index) => (
+
+            <div className='app__gallery-images_card flex__center' key={`gallery_image-${index + 1}`}>
+              <img src={image} alt= "gallery image" />
+             
+             {/* <BsInstragram className="gallery__image-icon" /> */}
+
+             <FontAwesomeIcon icon={faInstagram} size="2x" className='gallery__image-icon' />
+
+
+
+            </div>
+            
+          ))}
+
           <div className='app__gallery-images_arrow'>
             <BsArrowLeftShort className="gallery__arrow-icons" onClick={() => scroll('left')} />
-            <BsArrowLeftRightShort className="gallery__arrow-icons" onClick={() => scroll('right')} />
+            <BsArrowRightShort className="gallery__arrow-icons" onClick={() => scroll('right')} />
 
 
 
@@ -53,7 +78,7 @@ const Gallery = () => {
       </div>
 
      </div>
-  )
-}   
+  );
+} 
 
 export default Gallery
