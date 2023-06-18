@@ -6,8 +6,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import {SubHeading} from  '../../components';
-import { images} from '../../constants';
 import {BsInstragram,BsArrowLeftShort,BsArrowRightShort} from  'react-icons/bs';
+import { images } from '../../constants';
 
 const  galleryImages  = [images.gallery01,images.gallery02,images.gallery03,images.gallery04]
 //a variable holding  images being passed from an array
@@ -43,10 +43,11 @@ const Gallery = () => {
 
          <SubHeading  title="Instagram"/>
          <h1 className='headtext__cormorant'>Photo Gallery</h1>
-         <p className='p__opensans' style={{color:'#AAA',marginTop: '2rem'}}>t vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+         <p className='p__opensans' style={{color:'#AAA',marginTop: '2rem'}}>t vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrup  </p>
          <button  type='button' className='custom__button'>View More</button>
-
       </div>
+      
+
       <div className='app__gallery-images'>
         <div className='app__gallery-images_container' ref={scrollRef}>
 
@@ -59,7 +60,7 @@ const Gallery = () => {
              
              {/* <BsInstragram className="gallery__image-icon" /> */}
 
-             <FontAwesomeIcon icon={faInstagram} size="2x" className='gallery__image-icon' />
+             <FontAwesomeIcon icon={faInstagram} className='gallery__image-icon' />
 
 
 
@@ -67,7 +68,7 @@ const Gallery = () => {
             
           ))}
 
-          <div className='app__gallery-images_arrow'>
+          <div className='app__gallery-images_arrows'>
             <BsArrowLeftShort className="gallery__arrow-icons" onClick={() => scroll('left')} />
             <BsArrowRightShort className="gallery__arrow-icons" onClick={() => scroll('right')} />
 
